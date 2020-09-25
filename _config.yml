@@ -126,8 +126,8 @@ scheme: Muse
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -649,12 +649,12 @@ livere_uid: # <your_uid>
 # For more information: https://github.com/gitalk/gitalk
 gitalk:
   enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
-  distraction_free_mode: true # Facebook-like distraction free mode
+  github_id: jtzcode
+  repo: jtzcode.github.io # Repository name to store issues
+  client_id: df819fd98ec561d1a51c # GitHub Application Client ID
+  client_secret: 3a003e8d8e49908cceaa03f98debc39345c61c14 # GitHub Application Client Secret
+  admin_user: jtzcode # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  distraction_free_mode: false # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
