@@ -108,3 +108,7 @@ symbols_count_time:
   time: Reading time
   time_total: Reading time total
   time_minutes: mins.
+
+comments:
+  label: Comments
+  title: All Comments

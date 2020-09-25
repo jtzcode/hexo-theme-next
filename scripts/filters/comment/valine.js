@@ -20,12 +20,13 @@ hexo.extend.filter.register('theme_inject', injects => {
 hexo.extend.filter.register('theme_inject', injects => {
   let theme = hexo.theme.config;
   if (!theme.valine.enable || !theme.valine.appid || !theme.valine.appkey) return;
-
+  let t = hexo.theme.i18n.__();
+  let comment_title = t('comments.title');
   injects.postMeta.raw('valine', `
   {% if post.comments and (is_post() or theme.valine.comment_count) %}
   <span class="post-meta-item">
-    ${iconText('comment-o', 'valine', '评论')}
-    <a title="查看评论" href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
+    ${iconText('comment-o', 'valine', t('comments.label') )}
+    <a title="${comment_title}" href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
     </a>
   </span>
